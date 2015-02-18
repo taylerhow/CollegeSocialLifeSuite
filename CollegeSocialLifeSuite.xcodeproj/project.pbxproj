@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		332B492D1A858A27002B018D /* SplitTheBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332B492C1A858A27002B018D /* SplitTheBillViewController.swift */; };
+		3374CA671A7D6C1100A3E52F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3374CA661A7D6C1100A3E52F /* AppDelegate.swift */; };
+		3374CA6A1A7D6C1100A3E52F /* CollegeSocialLifeSuite.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3374CA681A7D6C1100A3E52F /* CollegeSocialLifeSuite.xcdatamodeld */; };
+		3374CA6C1A7D6C1100A3E52F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3374CA6B1A7D6C1100A3E52F /* ViewController.swift */; };
+		3374CA6F1A7D6C1100A3E52F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3374CA6D1A7D6C1100A3E52F /* Main.storyboard */; };
+		3374CA711A7D6C1100A3E52F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3374CA701A7D6C1100A3E52F /* Images.xcassets */; };
+		3374CA741A7D6C1100A3E52F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3374CA721A7D6C1100A3E52F /* LaunchScreen.xib */; };
+		3374CA801A7D6C1200A3E52F /* CollegeSocialLifeSuiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3374CA7F1A7D6C1200A3E52F /* CollegeSocialLifeSuiteTests.swift */; };
+		3374CA8C1A7D6C6500A3E52F /* Bill.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3374CA891A7D6C6500A3E52F /* Bill.gif */; };
+		3374CA8D1A7D6C6500A3E52F /* Money.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3374CA8A1A7D6C6500A3E52F /* Money.gif */; };
+		3374CA8E1A7D6C6500A3E52F /* Question Mark.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3374CA8B1A7D6C6500A3E52F /* Question Mark.gif */; };
+		3379A9A51A8E743400D3888D /* DebtTrackerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3379A9A41A8E743400D3888D /* DebtTrackerTableViewController.swift */; };
+		33C6B9441A8DB904008BCBE5 /* DebtTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6B9431A8DB904008BCBE5 /* DebtTrackerViewController.swift */; };
+		33C6B9471A8DC674008BCBE5 /* Debt.m in Sources */ = {isa = PBXBuildFile; fileRef = 33C6B9461A8DC674008BCBE5 /* Debt.m */; };
+		936F21B11A82F91A003B0CF1 /* DeciderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936F21B01A82F91A003B0CF1 /* DeciderViewController.swift */; };
+		937067101A8BF078006D3706 /* AbstractActionSheetPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 937066FF1A8BF078006D3706 /* AbstractActionSheetPicker.m */; };
+		937067151A8BF078006D3706 /* ActionSheetStringPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 9370670B1A8BF078006D3706 /* ActionSheetStringPicker.m */; };
+		937067171A8BF078006D3706 /* SWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9370670F1A8BF078006D3706 /* SWActionSheet.m */; };
+		9370671B1A8BFF38006D3706 /* Decision.m in Sources */ = {isa = PBXBuildFile; fileRef = 9370671A1A8BFF38006D3706 /* Decision.m */; };
+		93CEDAED1A8CE4A800461D63 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CEDAEC1A8CE4A800461D63 /* NotificationCenter.framework */; };
+		93CEDAF21A8CE4A800461D63 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CEDAF11A8CE4A800461D63 /* TodayViewController.swift */; };
+		93CEDAF41A8CE4A800461D63 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CEDAF31A8CE4A800461D63 /* MainInterface.storyboard */; };
+		93CEDAF71A8CE4A800461D63 /* CollegeSocialLifeSuiteWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 93CEDAEA1A8CE4A800461D63 /* CollegeSocialLifeSuiteWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		93CEDAFF1A8CE9C800461D63 /* Bill.gif in Resources */ = {isa = PBXBuildFile; fileRef = 93CEDAFC1A8CE9C800461D63 /* Bill.gif */; };
+		93CEDB001A8CE9C800461D63 /* Money.gif in Resources */ = {isa = PBXBuildFile; fileRef = 93CEDAFD1A8CE9C800461D63 /* Money.gif */; };
+		93CEDB011A8CE9C800461D63 /* Question Mark.gif in Resources */ = {isa = PBXBuildFile; fileRef = 93CEDAFE1A8CE9C800461D63 /* Question Mark.gif */; };
+		93D7D48A1A911970007EED17 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4811A91196E007EED17 /* Icon-60.png */; };
+		93D7D48B1A911971007EED17 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4821A91196E007EED17 /* Icon-72.png */; };
+		93D7D48C1A911971007EED17 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4831A91196E007EED17 /* Icon-72@2x.png */; };
+		93D7D48D1A911971007EED17 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4841A91196E007EED17 /* Icon-Small-50.png */; };
+		93D7D48E1A911971007EED17 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4851A91196E007EED17 /* Icon-Small-50@2x.png */; };
+		93D7D48F1A911971007EED17 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4861A91196E007EED17 /* Icon.png */; };
+		93D7D4901A911971007EED17 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4871A91196E007EED17 /* Icon@2x.png */; };
+		93D7D4911A911971007EED17 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4881A91196F007EED17 /* iTunesArtwork */; };
+		93D7D4921A911971007EED17 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4891A911970007EED17 /* iTunesArtwork@2x */; };
+		93D7D49C1A911982007EED17 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4931A911982007EED17 /* Icon-60.png */; };
+		93D7D49D1A911982007EED17 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4941A911982007EED17 /* Icon-72.png */; };
+		93D7D49E1A911982007EED17 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4951A911982007EED17 /* Icon-72@2x.png */; };
+		93D7D49F1A911982007EED17 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4961A911982007EED17 /* Icon-Small-50.png */; };
+		93D7D4A01A911982007EED17 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4971A911982007EED17 /* Icon-Small-50@2x.png */; };
+		93D7D4A11A911982007EED17 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4981A911982007EED17 /* Icon.png */; };
+		93D7D4A21A911982007EED17 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4991A911982007EED17 /* Icon@2x.png */; };
+		93D7D4A31A911982007EED17 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D49A1A911982007EED17 /* iTunesArtwork */; };
+		93D7D4A41A911982007EED17 /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D49B1A911982007EED17 /* iTunesArtwork@2x */; };
+		93D7D4AF1A9119AE007EED17 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4A51A9119AE007EED17 /* Icon-40.png */; };
+		93D7D4B01A9119AE007EED17 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4A61A9119AE007EED17 /* Icon-40@2x.png */; };
+		93D7D4B11A9119AE007EED17 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4A71A9119AE007EED17 /* Icon-40@3x.png */; };
+		93D7D4B21A9119AE007EED17 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4A81A9119AE007EED17 /* Icon-60@2x.png */; };
+		93D7D4B31A9119AE007EED17 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4A91A9119AE007EED17 /* Icon-60@3x.png */; };
+		93D7D4B41A9119AE007EED17 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4AA1A9119AE007EED17 /* Icon-76.png */; };
+		93D7D4B51A9119AE007EED17 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4AB1A9119AE007EED17 /* Icon-76@2x.png */; };
+		93D7D4B61A9119AE007EED17 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4AC1A9119AE007EED17 /* Icon-Small.png */; };
+		93D7D4B71A9119AE007EED17 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4AD1A9119AE007EED17 /* Icon-Small@2x.png */; };
+		93D7D4B81A9119AE007EED17 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4AE1A9119AE007EED17 /* Icon-Small@3x.png */; };
+		93D7D4C31A9119B5007EED17 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4B91A9119B5007EED17 /* Icon-40.png */; };
+		93D7D4C41A9119B5007EED17 /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4BA1A9119B5007EED17 /* Icon-40@2x.png */; };
+		93D7D4C51A9119B5007EED17 /* Icon-40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4BB1A9119B5007EED17 /* Icon-40@3x.png */; };
+		93D7D4C61A9119B5007EED17 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4BC1A9119B5007EED17 /* Icon-60@2x.png */; };
+		93D7D4C71A9119B5007EED17 /* Icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4BD1A9119B5007EED17 /* Icon-60@3x.png */; };
+		93D7D4C81A9119B5007EED17 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4BE1A9119B5007EED17 /* Icon-76.png */; };
+		93D7D4C91A9119B5007EED17 /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4BF1A9119B5007EED17 /* Icon-76@2x.png */; };
+		93D7D4CA1A9119B5007EED17 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4C01A9119B5007EED17 /* Icon-Small.png */; };
+		93D7D4CB1A9119B5007EED17 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4C11A9119B5007EED17 /* Icon-Small@2x.png */; };
+		93D7D4CC1A9119B5007EED17 /* Icon-Small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D7D4C21A9119B5007EED17 /* Icon-Small@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3374CA7A1A7D6C1100A3E52F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3374CA591A7D6C1100A3E52F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3374CA601A7D6C1100A3E52F;
+			remoteInfo = CollegeSocialLifeSuite;
+		};
+		93CEDAF51A8CE4A800461D63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3374CA591A7D6C1100A3E52F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93CEDAE91A8CE4A800461D63;
+			remoteInfo = CollegeSocialLifeSuiteWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		93CEDAFB1A8CE4A800461D63 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				93CEDAF71A8CE4A800461D63 /* CollegeSocialLifeSuiteWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		332B492C1A858A27002B018D /* SplitTheBillViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitTheBillViewController.swift; sourceTree = "<group>"; };
+		3374CA611A7D6C1100A3E52F /* CollegeSocialLifeSuite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollegeSocialLifeSuite.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3374CA651A7D6C1100A3E52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3374CA661A7D6C1100A3E52F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3374CA691A7D6C1100A3E52F /* CollegeSocialLifeSuite.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CollegeSocialLifeSuite.xcdatamodel; sourceTree = "<group>"; };
+		3374CA6B1A7D6C1100A3E52F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3374CA6E1A7D6C1100A3E52F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3374CA701A7D6C1100A3E52F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3374CA731A7D6C1100A3E52F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3374CA791A7D6C1100A3E52F /* CollegeSocialLifeSuiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CollegeSocialLifeSuiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3374CA7E1A7D6C1200A3E52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3374CA7F1A7D6C1200A3E52F /* CollegeSocialLifeSuiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollegeSocialLifeSuiteTests.swift; sourceTree = "<group>"; };
+		3374CA891A7D6C6500A3E52F /* Bill.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Bill.gif; sourceTree = "<group>"; };
+		3374CA8A1A7D6C6500A3E52F /* Money.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Money.gif; sourceTree = "<group>"; };
+		3374CA8B1A7D6C6500A3E52F /* Question Mark.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Question Mark.gif"; sourceTree = "<group>"; };
+		3379A9A41A8E743400D3888D /* DebtTrackerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtTrackerTableViewController.swift; sourceTree = "<group>"; };
+		33C6B9431A8DB904008BCBE5 /* DebtTrackerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebtTrackerViewController.swift; sourceTree = "<group>"; };
+		33C6B9451A8DC674008BCBE5 /* Debt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debt.h; sourceTree = "<group>"; };
+		33C6B9461A8DC674008BCBE5 /* Debt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Debt.m; sourceTree = "<group>"; };
+		936F21B01A82F91A003B0CF1 /* DeciderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeciderViewController.swift; sourceTree = "<group>"; };
+		937066FD1A8BF077006D3706 /* CollegeSocialLifeSuite-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CollegeSocialLifeSuite-Bridging-Header.h"; sourceTree = "<group>"; };
+		937066FE1A8BF078006D3706 /* AbstractActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractActionSheetPicker.h; sourceTree = "<group>"; };
+		937066FF1A8BF078006D3706 /* AbstractActionSheetPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractActionSheetPicker.m; sourceTree = "<group>"; };
+		937067091A8BF078006D3706 /* ActionSheetPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetPicker.h; sourceTree = "<group>"; };
+		9370670A1A8BF078006D3706 /* ActionSheetStringPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetStringPicker.h; sourceTree = "<group>"; };
+		9370670B1A8BF078006D3706 /* ActionSheetStringPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetStringPicker.m; sourceTree = "<group>"; };
+		9370670E1A8BF078006D3706 /* SWActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWActionSheet.h; sourceTree = "<group>"; };
+		9370670F1A8BF078006D3706 /* SWActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWActionSheet.m; sourceTree = "<group>"; };
+		937067191A8BFF38006D3706 /* Decision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decision.h; sourceTree = "<group>"; };
+		9370671A1A8BFF38006D3706 /* Decision.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Decision.m; sourceTree = "<group>"; };
+		93CEDAEA1A8CE4A800461D63 /* CollegeSocialLifeSuiteWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CollegeSocialLifeSuiteWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		93CEDAEC1A8CE4A800461D63 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		93CEDAF01A8CE4A800461D63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93CEDAF11A8CE4A800461D63 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		93CEDAF31A8CE4A800461D63 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		93CEDAFC1A8CE9C800461D63 /* Bill.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Bill.gif; sourceTree = "<group>"; };
+		93CEDAFD1A8CE9C800461D63 /* Money.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Money.gif; sourceTree = "<group>"; };
+		93CEDAFE1A8CE9C800461D63 /* Question Mark.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Question Mark.gif"; sourceTree = "<group>"; };
+		93D7D4811A91196E007EED17 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		93D7D4821A91196E007EED17 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		93D7D4831A91196E007EED17 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		93D7D4841A91196E007EED17 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		93D7D4851A91196E007EED17 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		93D7D4861A91196E007EED17 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		93D7D4871A91196E007EED17 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		93D7D4881A91196F007EED17 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		93D7D4891A911970007EED17 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		93D7D4931A911982007EED17 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		93D7D4941A911982007EED17 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		93D7D4951A911982007EED17 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		93D7D4961A911982007EED17 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		93D7D4971A911982007EED17 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		93D7D4981A911982007EED17 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		93D7D4991A911982007EED17 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		93D7D49A1A911982007EED17 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		93D7D49B1A911982007EED17 /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
+		93D7D4A51A9119AE007EED17 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		93D7D4A61A9119AE007EED17 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		93D7D4A71A9119AE007EED17 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		93D7D4A81A9119AE007EED17 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		93D7D4A91A9119AE007EED17 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		93D7D4AA1A9119AE007EED17 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		93D7D4AB1A9119AE007EED17 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		93D7D4AC1A9119AE007EED17 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		93D7D4AD1A9119AE007EED17 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		93D7D4AE1A9119AE007EED17 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		93D7D4B91A9119B5007EED17 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		93D7D4BA1A9119B5007EED17 /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@2x.png"; sourceTree = "<group>"; };
+		93D7D4BB1A9119B5007EED17 /* Icon-40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40@3x.png"; sourceTree = "<group>"; };
+		93D7D4BC1A9119B5007EED17 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		93D7D4BD1A9119B5007EED17 /* Icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@3x.png"; sourceTree = "<group>"; };
+		93D7D4BE1A9119B5007EED17 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		93D7D4BF1A9119B5007EED17 /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		93D7D4C01A9119B5007EED17 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		93D7D4C11A9119B5007EED17 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		93D7D4C21A9119B5007EED17 /* Icon-Small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@3x.png"; sourceTree = "<group>"; };
+		93D7D4CD1A913B9D007EED17 /* CollegeSocialLifeSuite.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CollegeSocialLifeSuite.entitlements; sourceTree = "<group>"; };
+		93D7D4CE1A913BBC007EED17 /* CollegeSocialLifeSuiteWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CollegeSocialLifeSuiteWidget.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3374CA5E1A7D6C1100A3E52F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3374CA761A7D6C1100A3E52F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93CEDAE71A8CE4A800461D63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93CEDAED1A8CE4A800461D63 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3374CA581A7D6C1100A3E52F = {
+			isa = PBXGroup;
+			children = (
+				3374CA631A7D6C1100A3E52F /* CollegeSocialLifeSuite */,
+				3374CA7C1A7D6C1200A3E52F /* CollegeSocialLifeSuiteTests */,
+				93CEDAEE1A8CE4A800461D63 /* CollegeSocialLifeSuiteWidget */,
+				93CEDAEB1A8CE4A800461D63 /* Frameworks */,
+				3374CA621A7D6C1100A3E52F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3374CA621A7D6C1100A3E52F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3374CA611A7D6C1100A3E52F /* CollegeSocialLifeSuite.app */,
+				3374CA791A7D6C1100A3E52F /* CollegeSocialLifeSuiteTests.xctest */,
+				93CEDAEA1A8CE4A800461D63 /* CollegeSocialLifeSuiteWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3374CA631A7D6C1100A3E52F /* CollegeSocialLifeSuite */ = {
+			isa = PBXGroup;
+			children = (
+				93D7D4CD1A913B9D007EED17 /* CollegeSocialLifeSuite.entitlements */,
+				937067181A8BF07E006D3706 /* Pickers */,
+				3374CA661A7D6C1100A3E52F /* AppDelegate.swift */,
+				3374CA6B1A7D6C1100A3E52F /* ViewController.swift */,
+				332B492C1A858A27002B018D /* SplitTheBillViewController.swift */,
+				936F21B01A82F91A003B0CF1 /* DeciderViewController.swift */,
+				33C6B9431A8DB904008BCBE5 /* DebtTrackerViewController.swift */,
+				3379A9A41A8E743400D3888D /* DebtTrackerTableViewController.swift */,
+				3374CA6D1A7D6C1100A3E52F /* Main.storyboard */,
+				3374CA701A7D6C1100A3E52F /* Images.xcassets */,
+				3374CA721A7D6C1100A3E52F /* LaunchScreen.xib */,
+				3374CA681A7D6C1100A3E52F /* CollegeSocialLifeSuite.xcdatamodeld */,
+				3374CA641A7D6C1100A3E52F /* Supporting Files */,
+				937066FD1A8BF077006D3706 /* CollegeSocialLifeSuite-Bridging-Header.h */,
+				937067191A8BFF38006D3706 /* Decision.h */,
+				9370671A1A8BFF38006D3706 /* Decision.m */,
+				33C6B9451A8DC674008BCBE5 /* Debt.h */,
+				33C6B9461A8DC674008BCBE5 /* Debt.m */,
+			);
+			path = CollegeSocialLifeSuite;
+			sourceTree = "<group>";
+		};
+		3374CA641A7D6C1100A3E52F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93D7D4B91A9119B5007EED17 /* Icon-40.png */,
+				93D7D4BA1A9119B5007EED17 /* Icon-40@2x.png */,
+				93D7D4BB1A9119B5007EED17 /* Icon-40@3x.png */,
+				93D7D4BC1A9119B5007EED17 /* Icon-60@2x.png */,
+				93D7D4BD1A9119B5007EED17 /* Icon-60@3x.png */,
+				93D7D4BE1A9119B5007EED17 /* Icon-76.png */,
+				93D7D4BF1A9119B5007EED17 /* Icon-76@2x.png */,
+				93D7D4C01A9119B5007EED17 /* Icon-Small.png */,
+				93D7D4C11A9119B5007EED17 /* Icon-Small@2x.png */,
+				93D7D4C21A9119B5007EED17 /* Icon-Small@3x.png */,
+				93D7D4811A91196E007EED17 /* Icon-60.png */,
+				93D7D4821A91196E007EED17 /* Icon-72.png */,
+				93D7D4831A91196E007EED17 /* Icon-72@2x.png */,
+				93D7D4841A91196E007EED17 /* Icon-Small-50.png */,
+				93D7D4851A91196E007EED17 /* Icon-Small-50@2x.png */,
+				93D7D4861A91196E007EED17 /* Icon.png */,
+				93D7D4871A91196E007EED17 /* Icon@2x.png */,
+				93D7D4881A91196F007EED17 /* iTunesArtwork */,
+				93D7D4891A911970007EED17 /* iTunesArtwork@2x */,
+				3374CA891A7D6C6500A3E52F /* Bill.gif */,
+				3374CA8A1A7D6C6500A3E52F /* Money.gif */,
+				3374CA8B1A7D6C6500A3E52F /* Question Mark.gif */,
+				3374CA651A7D6C1100A3E52F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3374CA7C1A7D6C1200A3E52F /* CollegeSocialLifeSuiteTests */ = {
+			isa = PBXGroup;
+			children = (
+				3374CA7F1A7D6C1200A3E52F /* CollegeSocialLifeSuiteTests.swift */,
+				3374CA7D1A7D6C1200A3E52F /* Supporting Files */,
+			);
+			path = CollegeSocialLifeSuiteTests;
+			sourceTree = "<group>";
+		};
+		3374CA7D1A7D6C1200A3E52F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3374CA7E1A7D6C1200A3E52F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		937067181A8BF07E006D3706 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				937066FE1A8BF078006D3706 /* AbstractActionSheetPicker.h */,
+				937066FF1A8BF078006D3706 /* AbstractActionSheetPicker.m */,
+				937067091A8BF078006D3706 /* ActionSheetPicker.h */,
+				9370670A1A8BF078006D3706 /* ActionSheetStringPicker.h */,
+				9370670B1A8BF078006D3706 /* ActionSheetStringPicker.m */,
+				9370670E1A8BF078006D3706 /* SWActionSheet.h */,
+				9370670F1A8BF078006D3706 /* SWActionSheet.m */,
+			);
+			name = Pickers;
+			sourceTree = "<group>";
+		};
+		93CEDAEB1A8CE4A800461D63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93CEDAEC1A8CE4A800461D63 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93CEDAEE1A8CE4A800461D63 /* CollegeSocialLifeSuiteWidget */ = {
+			isa = PBXGroup;
+			children = (
+				93D7D4CE1A913BBC007EED17 /* CollegeSocialLifeSuiteWidget.entitlements */,
+				93CEDAF11A8CE4A800461D63 /* TodayViewController.swift */,
+				93CEDAF31A8CE4A800461D63 /* MainInterface.storyboard */,
+				93CEDAEF1A8CE4A800461D63 /* Supporting Files */,
+			);
+			path = CollegeSocialLifeSuiteWidget;
+			sourceTree = "<group>";
+		};
+		93CEDAEF1A8CE4A800461D63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93D7D4A51A9119AE007EED17 /* Icon-40.png */,
+				93D7D4A61A9119AE007EED17 /* Icon-40@2x.png */,
+				93D7D4A71A9119AE007EED17 /* Icon-40@3x.png */,
+				93D7D4A81A9119AE007EED17 /* Icon-60@2x.png */,
+				93D7D4A91A9119AE007EED17 /* Icon-60@3x.png */,
+				93D7D4AA1A9119AE007EED17 /* Icon-76.png */,
+				93D7D4AB1A9119AE007EED17 /* Icon-76@2x.png */,
+				93D7D4AC1A9119AE007EED17 /* Icon-Small.png */,
+				93D7D4AD1A9119AE007EED17 /* Icon-Small@2x.png */,
+				93D7D4AE1A9119AE007EED17 /* Icon-Small@3x.png */,
+				93D7D4931A911982007EED17 /* Icon-60.png */,
+				93D7D4941A911982007EED17 /* Icon-72.png */,
+				93D7D4951A911982007EED17 /* Icon-72@2x.png */,
+				93D7D4961A911982007EED17 /* Icon-Small-50.png */,
+				93D7D4971A911982007EED17 /* Icon-Small-50@2x.png */,
+				93D7D4981A911982007EED17 /* Icon.png */,
+				93D7D4991A911982007EED17 /* Icon@2x.png */,
+				93D7D49A1A911982007EED17 /* iTunesArtwork */,
+				93D7D49B1A911982007EED17 /* iTunesArtwork@2x */,
+				93CEDAFC1A8CE9C800461D63 /* Bill.gif */,
+				93CEDAFD1A8CE9C800461D63 /* Money.gif */,
+				93CEDAFE1A8CE9C800461D63 /* Question Mark.gif */,
+				93CEDAF01A8CE4A800461D63 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3374CA601A7D6C1100A3E52F /* CollegeSocialLifeSuite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3374CA831A7D6C1200A3E52F /* Build configuration list for PBXNativeTarget "CollegeSocialLifeSuite" */;
+			buildPhases = (
+				3374CA5D1A7D6C1100A3E52F /* Sources */,
+				3374CA5E1A7D6C1100A3E52F /* Frameworks */,
+				3374CA5F1A7D6C1100A3E52F /* Resources */,
+				93CEDAFB1A8CE4A800461D63 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93CEDAF61A8CE4A800461D63 /* PBXTargetDependency */,
+			);
+			name = CollegeSocialLifeSuite;
+			productName = CollegeSocialLifeSuite;
+			productReference = 3374CA611A7D6C1100A3E52F /* CollegeSocialLifeSuite.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3374CA781A7D6C1100A3E52F /* CollegeSocialLifeSuiteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3374CA861A7D6C1200A3E52F /* Build configuration list for PBXNativeTarget "CollegeSocialLifeSuiteTests" */;
+			buildPhases = (
+				3374CA751A7D6C1100A3E52F /* Sources */,
+				3374CA761A7D6C1100A3E52F /* Frameworks */,
+				3374CA771A7D6C1100A3E52F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3374CA7B1A7D6C1100A3E52F /* PBXTargetDependency */,
+			);
+			name = CollegeSocialLifeSuiteTests;
+			productName = CollegeSocialLifeSuiteTests;
+			productReference = 3374CA791A7D6C1100A3E52F /* CollegeSocialLifeSuiteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		93CEDAE91A8CE4A800461D63 /* CollegeSocialLifeSuiteWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93CEDAF81A8CE4A800461D63 /* Build configuration list for PBXNativeTarget "CollegeSocialLifeSuiteWidget" */;
+			buildPhases = (
+				93CEDAE61A8CE4A800461D63 /* Sources */,
+				93CEDAE71A8CE4A800461D63 /* Frameworks */,
+				93CEDAE81A8CE4A800461D63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CollegeSocialLifeSuiteWidget;
+			productName = CollegeSocialLifeSuiteWidget;
+			productReference = 93CEDAEA1A8CE4A800461D63 /* CollegeSocialLifeSuiteWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3374CA591A7D6C1100A3E52F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Tayler How";
+				TargetAttributes = {
+					3374CA601A7D6C1100A3E52F = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = NW5WC35K46;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					3374CA781A7D6C1100A3E52F = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 3374CA601A7D6C1100A3E52F;
+					};
+					93CEDAE91A8CE4A800461D63 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = NW5WC35K46;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 3374CA5C1A7D6C1100A3E52F /* Build configuration list for PBXProject "CollegeSocialLifeSuite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3374CA581A7D6C1100A3E52F;
+			productRefGroup = 3374CA621A7D6C1100A3E52F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3374CA601A7D6C1100A3E52F /* CollegeSocialLifeSuite */,
+				3374CA781A7D6C1100A3E52F /* CollegeSocialLifeSuiteTests */,
+				93CEDAE91A8CE4A800461D63 /* CollegeSocialLifeSuiteWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3374CA5F1A7D6C1100A3E52F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D7D4C41A9119B5007EED17 /* Icon-40@2x.png in Resources */,
+				93D7D4921A911971007EED17 /* iTunesArtwork@2x in Resources */,
+				93D7D48F1A911971007EED17 /* Icon.png in Resources */,
+				93D7D4CC1A9119B5007EED17 /* Icon-Small@3x.png in Resources */,
+				93D7D4901A911971007EED17 /* Icon@2x.png in Resources */,
+				93D7D4C51A9119B5007EED17 /* Icon-40@3x.png in Resources */,
+				3374CA6F1A7D6C1100A3E52F /* Main.storyboard in Resources */,
+				3374CA741A7D6C1100A3E52F /* LaunchScreen.xib in Resources */,
+				93D7D48C1A911971007EED17 /* Icon-72@2x.png in Resources */,
+				3374CA8D1A7D6C6500A3E52F /* Money.gif in Resources */,
+				3374CA711A7D6C1100A3E52F /* Images.xcassets in Resources */,
+				93D7D4C31A9119B5007EED17 /* Icon-40.png in Resources */,
+				3374CA8E1A7D6C6500A3E52F /* Question Mark.gif in Resources */,
+				93D7D48B1A911971007EED17 /* Icon-72.png in Resources */,
+				93D7D4911A911971007EED17 /* iTunesArtwork in Resources */,
+				93D7D48D1A911971007EED17 /* Icon-Small-50.png in Resources */,
+				93D7D48A1A911970007EED17 /* Icon-60.png in Resources */,
+				93D7D4C91A9119B5007EED17 /* Icon-76@2x.png in Resources */,
+				93D7D4C71A9119B5007EED17 /* Icon-60@3x.png in Resources */,
+				93D7D4C81A9119B5007EED17 /* Icon-76.png in Resources */,
+				3374CA8C1A7D6C6500A3E52F /* Bill.gif in Resources */,
+				93D7D4C61A9119B5007EED17 /* Icon-60@2x.png in Resources */,
+				93D7D4CB1A9119B5007EED17 /* Icon-Small@2x.png in Resources */,
+				93D7D48E1A911971007EED17 /* Icon-Small-50@2x.png in Resources */,
+				93D7D4CA1A9119B5007EED17 /* Icon-Small.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3374CA771A7D6C1100A3E52F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93CEDAE81A8CE4A800461D63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D7D4A01A911982007EED17 /* Icon-Small-50@2x.png in Resources */,
+				93D7D49E1A911982007EED17 /* Icon-72@2x.png in Resources */,
+				93D7D4A41A911982007EED17 /* iTunesArtwork@2x in Resources */,
+				93D7D4A11A911982007EED17 /* Icon.png in Resources */,
+				93D7D49C1A911982007EED17 /* Icon-60.png in Resources */,
+				93CEDB011A8CE9C800461D63 /* Question Mark.gif in Resources */,
+				93D7D4B31A9119AE007EED17 /* Icon-60@3x.png in Resources */,
+				93D7D4B11A9119AE007EED17 /* Icon-40@3x.png in Resources */,
+				93D7D4B61A9119AE007EED17 /* Icon-Small.png in Resources */,
+				93D7D4A21A911982007EED17 /* Icon@2x.png in Resources */,
+				93CEDB001A8CE9C800461D63 /* Money.gif in Resources */,
+				93D7D4B21A9119AE007EED17 /* Icon-60@2x.png in Resources */,
+				93D7D4A31A911982007EED17 /* iTunesArtwork in Resources */,
+				93D7D4B01A9119AE007EED17 /* Icon-40@2x.png in Resources */,
+				93CEDAF41A8CE4A800461D63 /* MainInterface.storyboard in Resources */,
+				93D7D4AF1A9119AE007EED17 /* Icon-40.png in Resources */,
+				93D7D49F1A911982007EED17 /* Icon-Small-50.png in Resources */,
+				93D7D4B41A9119AE007EED17 /* Icon-76.png in Resources */,
+				93CEDAFF1A8CE9C800461D63 /* Bill.gif in Resources */,
+				93D7D4B81A9119AE007EED17 /* Icon-Small@3x.png in Resources */,
+				93D7D4B51A9119AE007EED17 /* Icon-76@2x.png in Resources */,
+				93D7D49D1A911982007EED17 /* Icon-72.png in Resources */,
+				93D7D4B71A9119AE007EED17 /* Icon-Small@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3374CA5D1A7D6C1100A3E52F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33C6B9471A8DC674008BCBE5 /* Debt.m in Sources */,
+				937067151A8BF078006D3706 /* ActionSheetStringPicker.m in Sources */,
+				3374CA6C1A7D6C1100A3E52F /* ViewController.swift in Sources */,
+				936F21B11A82F91A003B0CF1 /* DeciderViewController.swift in Sources */,
+				3379A9A51A8E743400D3888D /* DebtTrackerTableViewController.swift in Sources */,
+				332B492D1A858A27002B018D /* SplitTheBillViewController.swift in Sources */,
+				9370671B1A8BFF38006D3706 /* Decision.m in Sources */,
+				937067101A8BF078006D3706 /* AbstractActionSheetPicker.m in Sources */,
+				33C6B9441A8DB904008BCBE5 /* DebtTrackerViewController.swift in Sources */,
+				3374CA671A7D6C1100A3E52F /* AppDelegate.swift in Sources */,
+				937067171A8BF078006D3706 /* SWActionSheet.m in Sources */,
+				3374CA6A1A7D6C1100A3E52F /* CollegeSocialLifeSuite.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3374CA751A7D6C1100A3E52F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3374CA801A7D6C1200A3E52F /* CollegeSocialLifeSuiteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93CEDAE61A8CE4A800461D63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93CEDAF21A8CE4A800461D63 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3374CA7B1A7D6C1100A3E52F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3374CA601A7D6C1100A3E52F /* CollegeSocialLifeSuite */;
+			targetProxy = 3374CA7A1A7D6C1100A3E52F /* PBXContainerItemProxy */;
+		};
+		93CEDAF61A8CE4A800461D63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93CEDAE91A8CE4A800461D63 /* CollegeSocialLifeSuiteWidget */;
+			targetProxy = 93CEDAF51A8CE4A800461D63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3374CA6D1A7D6C1100A3E52F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3374CA6E1A7D6C1100A3E52F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3374CA721A7D6C1100A3E52F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3374CA731A7D6C1100A3E52F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3374CA811A7D6C1200A3E52F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3374CA821A7D6C1200A3E52F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3374CA841A7D6C1200A3E52F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CollegeSocialLifeSuite/CollegeSocialLifeSuite.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = CollegeSocialLifeSuite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CollegeSocialLifeSuite/CollegeSocialLifeSuite-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3374CA851A7D6C1200A3E52F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CollegeSocialLifeSuite/CollegeSocialLifeSuite.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = CollegeSocialLifeSuite/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CollegeSocialLifeSuite/CollegeSocialLifeSuite-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3374CA871A7D6C1200A3E52F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CollegeSocialLifeSuiteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollegeSocialLifeSuite.app/CollegeSocialLifeSuite";
+			};
+			name = Debug;
+		};
+		3374CA881A7D6C1200A3E52F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CollegeSocialLifeSuiteTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CollegeSocialLifeSuite.app/CollegeSocialLifeSuite";
+			};
+			name = Release;
+		};
+		93CEDAF91A8CE4A800461D63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CollegeSocialLifeSuiteWidget/CollegeSocialLifeSuiteWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CollegeSocialLifeSuiteWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		93CEDAFA1A8CE4A800461D63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CollegeSocialLifeSuiteWidget/CollegeSocialLifeSuiteWidget.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CollegeSocialLifeSuiteWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3374CA5C1A7D6C1100A3E52F /* Build configuration list for PBXProject "CollegeSocialLifeSuite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3374CA811A7D6C1200A3E52F /* Debug */,
+				3374CA821A7D6C1200A3E52F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3374CA831A7D6C1200A3E52F /* Build configuration list for PBXNativeTarget "CollegeSocialLifeSuite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3374CA841A7D6C1200A3E52F /* Debug */,
+				3374CA851A7D6C1200A3E52F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3374CA861A7D6C1200A3E52F /* Build configuration list for PBXNativeTarget "CollegeSocialLifeSuiteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3374CA871A7D6C1200A3E52F /* Debug */,
+				3374CA881A7D6C1200A3E52F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93CEDAF81A8CE4A800461D63 /* Build configuration list for PBXNativeTarget "CollegeSocialLifeSuiteWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93CEDAF91A8CE4A800461D63 /* Debug */,
+				93CEDAFA1A8CE4A800461D63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3374CA681A7D6C1100A3E52F /* CollegeSocialLifeSuite.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3374CA691A7D6C1100A3E52F /* CollegeSocialLifeSuite.xcdatamodel */,
+			);
+			currentVersion = 3374CA691A7D6C1100A3E52F /* CollegeSocialLifeSuite.xcdatamodel */;
+			path = CollegeSocialLifeSuite.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3374CA591A7D6C1100A3E52F /* Project object */;
+}
