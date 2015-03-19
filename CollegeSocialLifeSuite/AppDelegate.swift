@@ -113,14 +113,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationController = self.window!.rootViewController as UINavigationController
         let controller = navigationController.childViewControllers[0] as ViewController
         if(url.description == "collegeHelp://Split"){
-            println("Split")
             controller.performSegueWithIdentifier("SplitTheBillSegue", sender: self)
         } else if (url.description == "collegeHelp://Debt"){
-            println("Debt")
             controller.performSegueWithIdentifier("DebtTrackerSegue", sender:self)
         } else if (url.description == "collegeHelp://Decision"){
-            println("Decision")
             controller.performSegueWithIdentifier("DecisionMakerSegue", sender: self)
+        } else {
+            return false
         }
         return true
     }

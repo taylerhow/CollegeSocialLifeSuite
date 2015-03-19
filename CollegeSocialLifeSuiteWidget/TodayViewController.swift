@@ -14,9 +14,6 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         
     override func viewDidLoad() {
         super.viewDidLoad()
-//        NSNotificationCenter().addObserver(self) {
-//            NSUserDefaultsDidChangeNotification object
-//        }
         self.preferredContentSize = CGSizeMake(320, 80)
         // Do any additional setup after loading the view from its nib.
         decisionMakerButton.titleLabel?.textAlignment = NSTextAlignment.Center
